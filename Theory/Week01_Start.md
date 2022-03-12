@@ -33,10 +33,7 @@
 -   **데이터 전처리** : 데이터들의 특성값을 일정한 기준으로 맞춰주는 작업 K-NN 알고리즘에서는 데이터 간의 스케일(scale)을 통일 해주는 방법이 있음
 -   **표준점수(= z 점수)(standard score)** : 특성값이 평균에서 표준편차의 몇 배만큼 떨어져 있는 지 나타냄;
 
-$$ Z_i = \frac{X_i - E(X)}{\sigma} $$
-
-\Large Z_i = \frac{X_i - E(X)}{\sigma}
-![Large](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D) 
+![수식](raw/week01_01.png)
 
 -   통계 관련 자료
 

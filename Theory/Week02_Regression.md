@@ -14,7 +14,7 @@
 
 ### 결정 계수(coefficienct of determination)
 
-$$ R^2 = 1 - \frac {\sum(타깃 - 예측)^2}{\sum(타깃-평균)^2} $$
+![](raw/week02_01.png)
 
 예측값이 타깃들을 얼마나 설명해 주는지 알려주는 지표
 
@@ -25,13 +25,13 @@ $$ R^2 = 1 - \frac {\sum(타깃 - 예측)^2}{\sum(타깃-평균)^2} $$
 
 ### 절대오차 (Absolute Error)
 
-$$ E = |실제값 - 실험값| $$
+![](raw/week02_02.png)
 
 실제값과 실험값의 차이를 절대값으로 나타낸 것
 
 ### 평균 절대 오차 (MAE = Mean Absolute Error)
 
-$$ E = \frac{\sum|실제 - 실험|}{n} $$
+![](raw/week02_03.png)
 
 -   절대 오차의 평균
 -   직관적임
@@ -39,7 +39,7 @@ $$ E = \frac{\sum|실제 - 실험|}{n} $$
 
 ### 평균 제곱 오차 (MSE = Mean Square Error)
 
-$$ MSE = \frac {\sum(실제 - 예측)^2}{n} $$
+![](raw/week02_04.png)
 
 -   수학적인 분석이 쉬움
 -   계산의 용이성 등
@@ -55,7 +55,7 @@ $$ MSE = \frac {\sum(실제 - 예측)^2}{n} $$
 특성과 타깃관계를 잘 나타내는 **선형 방정식**을 찾는 문제
 2차원에서는 **직선방정식**을 찾는 문제 계수, 가중치를 찾는 문제
 
-$y = ax + b$
+y = ax + b
 
 [점들을 대표하는 직선을 찾는 방법](https://youtu.be/91r8bzLcvuQ)
 

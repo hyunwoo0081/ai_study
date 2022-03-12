@@ -8,7 +8,7 @@
 [혼자 공부하는 머신러닝+딥러닝](http://www.yes24.com/Product/Goods/96024871) 으로 공부하고 있습니다.
 
 ## 이론 정리
-[1주차 머신러닝 준비](Theory/Week01_start.md)
+[1주차 머신러닝 준비](Theory/Week01_Start.md)
 
 [2주차 회귀 모델 학습](Theory/Week02_Regression.md)
 

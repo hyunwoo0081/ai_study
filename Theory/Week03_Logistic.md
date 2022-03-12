@@ -2,23 +2,23 @@
 # 3주차 로지스틱 회귀 & 확률적 경사 하강법
 회귀이지만 분류를 해주는 **로지스틱 회귀**와 많이 쓰이는 **확률적 경사 하강법**에 대하여 알아보도록 합시다
 
-# 📈 로지스틱 회귀 **(Logistic Regression)**
 
+# 📈 로지스틱 회귀 **(Logistic Regression)**
 ### 로지스틱 회귀 이진분류
 
 **선형 방정식**을 학습한 뒤, **시그모이드 함수(Sigmoid Function) = 로지스틱 함수(Logistic Function)**를 사용하여 **Class에 속할 확률**을 구하는 모델
 
-$$ P = \frac{1}{1+e^{-f(X)}} $$
+![](raw/week03_01.png)
 
-$$ f(X)=\omega X + \beta $$
+![](raw/week03_02.png)
+
 
 ### 로지스틱 회귀 다중분류
-
 **각각의 feature**에 대하여 **선형방정식**을 학습한 뒤 **소프트맥스 함수(Softmax Function)**를 사용하여 **Class에 속할 확률**을 구하는 모델
 
-## 〽 시그모이드 함수 **(Sigmoid Function = Logistic Function)**
 
-$$ \phi=\frac{1}{1+e^{-z}} $$
+## 〽 시그모이드 함수 **(Sigmoid Function = Logistic Function)**
+![](raw/week03_03.png)
 
 오즈(odds)비의 log를 씌운 값을 변형(**로짓변환**)하여 얻어진 함수🤯
 
@@ -30,9 +30,9 @@ $$ \phi=\frac{1}{1+e^{-z}} $$
 
 로지스틱 회귀로 **이진분류**를 할 때 사용합니다
 
-## 〽 소프트맥스 함수(Softmax Function)
 
-$$ y_k = \frac{e^{a_k}}{\sum_{i=1}^{n}{e^{a_i}}} $$
+## 〽 소프트맥스 함수(Softmax Function)
+![](raw/week03_04.png)
 
 [딥러닝-3.2. 활성화함수(3)-소프트맥스 함수(Softmax)](https://gooopy.tistory.com/53)
 
@@ -46,15 +46,16 @@ $$ y_k = \frac{e^{a_k}}{\sum_{i=1}^{n}{e^{a_i}}} $$
 
 로지스틱 회귀로 **다항 분류**를 할 때 사용합니다
 
+
 # 📉 확률적 경사 하강법
 
 ### 📋 점진적 학습(=온라인 학습)
-
 새로운 데이터가 등장했을 때 **기존 학습모델**을 **버리지 않고** 새로운 데이터에 대해서 **더 훈련**하는 것 대표적으로 📉 **확률적 경사하강법**이 있습니다
 
-## ✨ 경사 하강법
 
+## ✨ 경사 하강법
 손실함수(Loss Function)의 경사가 가파른 부분을 따라 조금씩 내려오게 하는 모델
+
 
 ### 📉 확률적 경사 하강법
 
@@ -64,18 +65,20 @@ $$ y_k = \frac{e^{a_k}}{\sum_{i=1}^{n}{e^{a_i}}} $$
 
 **애포크(Epoch)** : 확률적 경사 하강법에서 훈련세트를 **한번**씩 **모두 사용**하는 과정
 
+
 ### 🎁 미니배치 경사 하강법
 
 **여러개의 샘플**을 랜덤하게 뽑아 가장 가파른 부분을 찾는 모델
 
 **신경망 모델**에서도 사용
 
+
 ### 🛒 배치 경사 하강법
 
 **모든 샘플**을 이용하여 가장 가파른 부분을 찾는 모델
 
-# 💪 손실함수(Loss Function)
 
+# 💪 손실함수(Loss Function)
 **비용함수(Cost Function)**와 같은 뜻으로 머신러닝 알고리즘이 얼마나 **오류가 많은지 알려주**는 함수입니다.
 
 **확률적 경사 하강법**에서 **학습의 기준**으로 쓰는 함수입니다.
@@ -90,10 +93,10 @@ $$ y_k = \frac{e^{a_k}}{\sum_{i=1}^{n}{e^{a_i}}} $$
 
 로지스틱 회귀 다중 분류에서는 **크로스엔트로피 손실함수(Cross-Entropy Loss function)**라고 불립니다
 
-$$ Loss(predict)=\begin{cases}-\log(predict), & if\ \ target = 1 \\ -log(l-predict), & if\ \ target = 0 \end{cases} $$
+![](raw/week03_05.png)
 
 그밖에 손실함수로는 **MAE(평균 절대 오차)**, **MSE(평균 제곱 오차)** 등이 있습니다.
 
-# 실습하기
 
+# 실습하기
 [Google Colaboratory](https://colab.research.google.com/drive/1vQZ5pJk963UBnHY8GPuxsOk82tWekKsi?authuser=2#scrollTo=Ljv1O9O_qtYP)
